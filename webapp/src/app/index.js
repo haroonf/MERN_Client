@@ -109,18 +109,23 @@ function Body(props) {
 
 function Footer(props) {
   const { onPressRoutines, onPressAdd } = props
+
   return (
-    <View style={{flexDirection:'row'}}>
-      <Button
-        title={"ROUTINES"}
-        color={"black"}
-        onPress={() => onPressRoutines()}
-      />
-      <Button
-        title={"ADD"}
-        color={"darkgreen"}
-        onPress={() => onPressAdd()}
-      />
+    <View style={{ flexDirection: 'row' }}>
+      <View style={{ marginLeft: 10 }}>
+        <Button
+          title={"ROUTINES"}
+          color={"black"}
+          onPress={() => onPressRoutines()}
+        />
+      </View>
+      <View style={{ marginLeft: 10 }}>
+        <Button
+          title={"ADD"}
+          color={"darkgreen"}
+          onPress={() => onPressAdd()}
+        />
+      </View>
     </View>
   )
 }
@@ -148,7 +153,7 @@ function Container() {
            console.log("refresh routines")
            refreshFromServer()
           setAddMode(false)
-        }} 
+        }}
 
           />
       </View>
