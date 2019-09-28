@@ -6,5 +6,5 @@ The MERN client created in my Medium story: [MERN Tutorial - Building a Web App]
 - Type `DEBUG=server:* npm start` in your server directory to start the server
 
 # How to start the client
-- Type `PORT=3001 REACT_APP_SERVER="http://localhost:3000/" npm run start`
+- Type `PORT=3001 REACT_APP_SERVER="http://localhost:3000/" npm run start` in your client directory to start the client
   - REACT_APP_SERVER is where your HTTP Requests are made, can be external 
