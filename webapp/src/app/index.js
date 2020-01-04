@@ -66,7 +66,7 @@ function Header(props) {
 
 function Body(props) {
  const { addMode, routines, refreshRoutines } = props
- let scrollStyle = { width: '86vw', marginVertical: 10 }
+ let scrollStyle = { width: '86%', marginVertical: 10, alignSelf: 'center' }
  let routineStyle = { backgroundColor: 'ivory', borderColor: 'black', borderWidth: 2, borderRadius: 5 }
  let nameStyle = { textAlign: 'center', fontSize: 30, textDecorationLine: 'underline' }
  let procedureStyle = { textAlign: 'center', fontSize: 15 }
@@ -147,14 +147,13 @@ function Container() {
 
       <View style={styles.body}>
           <Body
-          addMode={addMode}
-        routines={routines}
-        refreshRoutines={() => {
-           console.log("refresh routines")
-           refreshFromServer()
-          setAddMode(false)
-        }}
-
+            addMode={addMode}
+            routines={routines}
+            refreshRoutines={() => {
+              console.log("refresh routines")
+              refreshFromServer()
+              setAddMode(false)
+            }}
           />
       </View>
 
